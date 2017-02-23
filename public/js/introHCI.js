@@ -15,5 +15,5 @@ function initializePage() {
 }
 
 function liked(e){
-  ga('send', 'pageview', 'like','click');
+  ga("send", "event", 'like','click');
 }
