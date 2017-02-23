@@ -17,7 +17,7 @@
 	'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 	</script><script>utmx('url','A/B');</script>
 	<!-- End of Google Analytics Content Experiment code -->
-	
+
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +36,10 @@
 		</div>
 
 		<h4>Projects</h4>
+		{{#if min}}
+		<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
+		{{else}}
+
 		{{#each projects}}
 			<div class="project" id="{{id}}">
 				<div class="thumbnail">
@@ -43,11 +47,11 @@
 						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
 						<h4>{{title}}</h4>
 					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
 					<div class="details"></div>
 				</div>
 			</div>
 		{{/each}}
+		{{/if}}
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
