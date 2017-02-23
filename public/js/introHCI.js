@@ -15,6 +15,5 @@ function initializePage() {
 }
 
 function liked(e){
-  ga('create', 'UA-92521906-1', 'auto');
   ga('send', 'pageview', 'like','click');
 }
